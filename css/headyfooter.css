@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* font-family: "Poppins", sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+/* font-family: "Nanum Gothic", sans-serif; */
+
+:root {
+    --color-fondo: #c1c6cc;
+    --color-primario: #194d8c;
+    --color-secundario: #7b7c7c;
+    --color-oscuro: #0e0e0e;
+    --color-variable: #84a4c4;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    /* outline: 1px solid red; */
+}
+
+/* HEADER */
+
+.cabezera{
+    /* background-color: #FFF; */
+    background: linear-gradient(to bottom, var(--color-fondo), var(--color-gradiente));
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+    z-index: 10;
+}
+
+.logomain{
+    width: 180px;
+    display: inline-block;
+}
+
+.menunav{
+    display: inline-block;
+}
+
+.listanav{
+    display: flex;
+}
+
+.listanav li{
+    list-style: none;
+    padding: 5px 10px;
+}
+
+.menunav ul li a{
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 400;
+    color: var(--color-primario);
+}
+
+.menu{
+    border-radius: 10px;
+    padding: 12px ;
+    font-size: 1.8em;
+}
+
+.menu:hover{
+    transition: .5s; 
+    background: linear-gradient(45deg, #194d8c, #153e6b);
+    border-radius: 10px;
+    color: #FFFF;
+    box-shadow: 0 8px 20px rgba(0, 42, 182, 0.205);
+}
+
+.hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 20;
+}
+
+
+.carousel-container {
+    margin: 0 auto;
+    width: 80%;
+    overflow: hidden;
+    padding: 40px;
+}
+
+
+.carousel {
+    display: flex;
+    width: calc(200px * 8 * 2);
+    animation: moveLogos 40s linear infinite;
+}
+
+.logo {
+    flex: 0 0 auto;
+    width: fit-content;
+    margin: 0 30px; /* Ajusta la separación entre los logos */
+    height: 60px;
+}
+
+@keyframes moveLogos {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* FOOTER */
+
+.pie{
+    width: 100%;
+    background-color: var(--color-oscuro);
+    color: var(--color-secundario);
+    display: flex;
+    justify-content: space-between;
+    font-size: 1em;
+}
+
+.logosf{
+    width: 25vw;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.logomain2{
+    width: 16vw;
+}
+
+.logossn{
+    width: 16vw;
+    height: auto;
+    object-fit: contain;
+}
+
+.direction{
+    width: 25vw;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.direccionmdp{
+    text-align: center;
+}
+
+.redesft{
+    width: 25vw;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.icofoot{
+    width: 25vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 1.6em;
+}
+
+.icofoot a i{
+    text-decoration: none;
+    color: var(--color-secundario);
+}
+
+
+/* MOBILES */
+
+
+@media (max-width: 1300px) {
+    .menunav {
+        display: none;
+        flex-direction: column;
+        background: var(--color-oscuro);
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 270px;
+    }
+
+    .menunav ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menunav ul li {
+        /* text-align: center; */
+        padding: 15px;
+        border-bottom: 1px solid var(--color-secundario);
+    }
+
+    .menunav ul li a {
+        color: #FFF;
+    }
+
+    .hamburger {
+        display: block;
+        font-size: 3em;
+    }
+
+    .menunav.active {
+        display: flex;
+    }
+
+    .pie{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .pie div{
+        padding: 20px;
+        width: 100%;
+    }
+
+    .pie div img{
+        width: 300px;
+    }
+
+    .carousel {
+        display: flex;
+        animation: moveLogos 40s linear infinite;
+}
+
+@keyframes moveLogos {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-200px * 8));
+    }
+}
+ }

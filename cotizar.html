@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="./css/cotizarstyle.css">
+    <link rel="shortcut icon" href="./Assets/ico/gpc.png" type="image/x-icon">
+    <title>Grupo Perez Cabrera</title>
+</head>
+<body>
+    <header class="cabezera">
+        <a href="./index.html"><img class="logomain" src="./Assets/ico/logo-trans-gpc.png" alt="logo gpc"></a>
+        <nav class="menunav">
+            <ul class="listanav">
+                <li><a href="./index.html#Q1" class="menu ini">Quiénes somos?</a></li>
+                <li><a href="./index.html#S2" class="menu serv">Servicios</a></li>
+                <li><a href="./index.html" class="menu trab">Novedades</a></li>
+                <li><a href="./trabajacn.html" class="menu nov">Trabaja con nosotros</a></li>
+                <li><a href="./contact.html" class="menu cont">Contactanos</a></li>
+                <li><a href="#" class="menu cot">Cotizar</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+    <main>
+        <section class="cotizarmain">
+            <div class="titucot">
+                <h2 class="tcotizar">Cotizá tu vehículo</h2>
+                <p class="textcot">Te contactaremos a la brevedad</p>
+            </div>
+            <form action="https://formsubmit.co/davidpintof.dev@gmail.com" method="POST" class="formulario">
+                <h3 class="datospro">Datos del Propietario</h3>
+                <label for="name">Nombre completo</label>
+                <input type="text" placeholder="Introducí tu nombre...">
+
+                <label for="dni">DNI</label>
+                <input type="number" placeholder="Introducí tu nro de DNI...">
+
+                <label for="email">E-mail</label>
+                <input type="email" placeholder="Introducí tu correo...">
+
+                <label for="number">Teléfono</label>
+                <input type="number" placeholder="Introducí tu telefono...">
+
+                <label for="number">CP</label>
+                <input type="number" placeholder="Introducí tu código postal...">
+                <h3 class="datosvh">Datos del vehículo</h3>
+                <p class="datostx">Por favor completar con los datos tal cual figuren en la cedula de tu vehiculo</p>
+
+                <label for="marca">Marca</label>
+                <input type="text" placeholder="Marca del vehiculo...">
+
+                <label for="modelo">Modelo</label>
+                <input type="text" placeholder="Modelo del vehículo...">
+
+                <label for="year">Año</label>
+                <input type="number" min="1980" max="2025" placeholder="Introducí el año de tu vehiculo...">
+
+                <label for="gnc">GNC?</label>
+                <select id="gnc" name="gnc" required>
+                    <option value="">Seleccione una opción</option>
+                    <option value="si">Sí</option>
+                    <option value="no">No</option>
+                </select>
+                
+                <input class="btn" type="submit" value="Enviar">
+                <input type="hidden" name="next" value="http://127.0.0.1:5501/trabajacn.html">
+                <input type="hidden" name="_captcha" value="false">
+            </form>
+        </section>
+        <div class="carousel-container">
+            <div class="carousel">
+                <img src="./assets/img/Aseguradoras/ALLIANZ.png" alt="Logo 1" class="logo">
+                <img src="./assets/img//Aseguradoras/MAPFRE.png" alt="Logo 2" class="logo">
+                <img src="./assets/img//Aseguradoras/MERCANTILANDINA.png" alt="Logo 3" class="logo">
+                <img src="./assets/img//Aseguradoras/RIVADAVIA.png" alt="Logo 4" class="logo">
+                <img src="./assets/img//Aseguradoras/RUS.png" alt="Logo 5" class="logo">
+                <img src="./assets/img//Aseguradoras/SANCOR.png" alt="Logo 6" class="logo">
+                <img src="./assets/img//Aseguradoras/SANCRISTOBAL.png" alt="Logo 7" class="logo">
+                <img src="./assets/img//Aseguradoras/ZURICH.png" alt="Logo 8" class="logo">
+                
+                <img src="./assets/img//Aseguradoras/ALLIANZ.png" alt="Logo 1" class="logo">
+                <img src="./assets/img//Aseguradoras/MAPFRE.png" alt="Logo 2" class="logo">
+                <img src="./assets/img//Aseguradoras/MERCANTILANDINA.png" alt="Logo 3" class="logo">
+                <img src="./assets/img//Aseguradoras/RIVADAVIA.png" alt="Logo 4" class="logo">
+                <img src="./assets/img//Aseguradoras/RUS.png" alt="Logo 5" class="logo">
+                <img src="./assets/img//Aseguradoras/SANCOR.png" alt="Logo 6" class="logo">
+                <img src="./assets/img//Aseguradoras/SANCRISTOBAL.png" alt="Logo 7" class="logo">
+                <img src="./assets/img//Aseguradoras/ZURICH.png" alt="Logo 8" class="logo">
+            </div>
+        </div>
+    </main>
+    <footer class="pie">
+        <div class="logosf">
+            <img class="logomain2" src="./Assets/ico/gpc.png" alt="logoGPC">
+            <img class="logossn" src="./Assets/ico/logossn.png" alt="Logo SSN">
+        </div>
+        <div class="direction">
+            <p class="direccionmdp">Av. Jara 131, Mar del plata. CP 7600</p>
+        </div>
+        <div class="redesft">
+            <p class="nrft">Nuestras redes</p>
+            <div class="icofoot">
+                <a href="https://wa.me/+5492236331241/" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.facebook.com/grupoperezcabrera" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/gpc.seguros/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+</html>
