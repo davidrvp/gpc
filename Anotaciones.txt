@@ -1,0 +1,41 @@
+
+TRABAJA CON NOSOTROS
+
+Sos PAS? te invitamos a conocernos!
+
+Nombre completo:
+E-mail           Teléfono
+Comentarios:
+
+
+
+
+COTIZÁ TU VEHICULO
+
+Nombre completo            DNI
+E-mail                     Teléfono
+Código postal
+
+Datos del vehiculo:
+_Por favor completar con los datos tal cual figuren en la cedula de tu vehiculo_
+Marca               Modelo
+Año          GNC SI/NO
+
+
+COTIZACION OTRO RIEGO
+
+Nombre completo            DNI
+E-mail                     Teléfono
+Código postal
+
+En caso de requerir una cotización que no sea para auto o moto, 
+por favor detallanos en el siguiente cuadro qué es lo que necesites cotizar
+ y a la brevedad un asesor se comunicará con vos.
+
+Form
+Nombre completo
+tel*
+mail*
+Motivo de consulta
+
+

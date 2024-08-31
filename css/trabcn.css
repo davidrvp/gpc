@@ -122,7 +122,7 @@ textarea{
 
 @media (max-width: 1000px){
     .formulario{
-        width: 95vw;
+        width: 95%;
     }
 }
 

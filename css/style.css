@@ -129,63 +129,64 @@
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Cambiar sombra */
 }
 
+/* REDES FIXED */
+/* 
 .redes{
-    width: 10vw;
-    font-size: 2.8em;
     position: fixed;
-    right: 0.1px;
+    right: -60px;
     top: 50%;
     z-index: 100;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
-    align-content: flex-end;
 }
 
 .redes a {
-    margin-bottom: 2px;
     transition: transform 0.4s ease;
-    height: 42px;
 }
 
-.redes a i{
-    padding: 3px;
+.icon-whatsapp{
+    color: #ffff;
+    font-size: 22px;
+    padding: 3px 9px;
+    width: 100px ;
+    border-radius: 6px;
+    background-image: linear-gradient(90deg, rgba(89, 252, 146, 1) 0%, rgba(27, 117, 41, 1) 100%);
+}
+
+.icon-instagram{
+    color: #ffff;
+    font-size: 22px;
+    padding: 3px 9px;
+    width: 100px ;
+    border-radius: 6px;
+    
+    background-image: linear-gradient(90deg, rgba(252, 89, 247, 1) 0%, rgba(110, 17, 214, 1) 100%);
+}
+
+.icon-facebook{
+    color: #ffff;
+    font-size: 22px;
+    padding: 3px 9px;
+    width: 100px ;
+    border-radius: 6px;
+    background-image: linear-gradient(90deg, rgba(89, 103, 252, 1) 0%, rgba(126, 188, 235, 1) 100%);
 }
 
 .icon-whatsapp:hover {
-    transform: translateX(-10px);
+    transform: translateX(-20px);
+
 }
 
 .icon-facebook:hover {
-    transform: translateX(-10px);
+    transform: translateX(-20px);
 }
 
 .icon-instagram:hover {
-    transform: translateX(-10px);
-}
+    transform: translateX(-20px);
+} */
 
-.fa-square-whatsapp{
-    color: rgb(2, 133, 0);
-    background-color: var(--color-fondo);
-    border-radius: 5px 0 0 0;
-}
 
-.fa-square-whatsapp:hover {
-    color: rgb(2, 133, 0);
-    background-color: var(--color-fondo);
-}
-
-.fa-square-facebook{
-    color: rgba(0, 68, 241, 1);
-    background-color: var(--color-fondo);
-    
-}
-
-.fa-square-instagram{
-    color: rgba(253, 22, 255, 1);
-    background-color: var(--color-fondo);
-    border-radius: 0 0 0 5px;
-}
+/* CONTENIDO MAIN */
 
 .quienes{
     margin: 0 auto;
