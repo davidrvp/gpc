@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="./css/siniestros.css">
+    <link rel="shortcut icon" href="./Assets/ico/gpc.png" type="image/x-icon">
+    <title>Grupo Perez Cabrera</title>
+</head>
+<body>
+    <header class="cabezera">
+        <a href="./index.html"><img class="logomain" src="./Assets/ico/logotransgpc.png" alt="logo gpc"></a>
+        <nav class="menunav">
+            <ul class="listanav">
+                <li><a href="./index.html" class="menu ini">Quiénes somos?</a></li>
+                <li><a href="./index.html" class="menu serv">Servicios</a></li>
+                <li><a href="./index.html#" class="menu trab">Novedades</a></li>
+                <li><a href="./trabajacn.html" class="menu nov">Trabaja con nosotros</a></li>
+                <li><a href="./contact.html" class="menu cont">Contactanos</a></li>
+                <li><a href="./cotizar.html" class="menu cot">Cotizar</a></li>
+                <li><a href="#" class="menu cot">Siniestros</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+    <main>
+        <section class="siniestrosmain">
+            <div>
+                <h2 class="tituloqs">Siniestros</h2>
+            </div>
+        </section>
+        <section class="contenidos">
+            <div class="botones4">
+                <button id="btnAutomotor" class="botones" onclick="mostrarContenido('contenidoAutomotor', 'btnAutomotor')">Automotor</button>
+                <button id="btnHogar" class="botones" onclick="mostrarContenido('contenidoHogar', 'btnHogar')">Hogar</button>
+                <button id="btnComercio" class="botones" onclick="mostrarContenido('contenidoComercio', 'btnComercio')">Comercio</button>
+                <button id="btnOtros" class="botones" onclick="mostrarContenido('contenidoOtros', 'btnOtros')">Otros</button>
+            </div>
+            <div id="contenidoAutomotor" class="contenido visible">
+                <p>Contenido de Automotor.</p>
+            </div>
+            <div id="contenidoHogar" class="contenido">
+                <p>Contenido de Hogar.</p>
+            </div>
+            <div id="contenidoComercio" class="contenido">
+                <p>Contenido de Comercio.</p>
+            </div>
+            <div id="contenidoOtros" class="contenido">
+                <p>Contenido de Otros.</p>
+            </div>
+            <script src="./js/scrsiniestros.js"></script>
+        </section>
+        <div class="carousel-container">
+            <div class="carousel">
+                <img src="./assets/img/Aseguradoras/ALLIANZ.png" alt="Logo 1" class="logo">
+                <img src="./assets/img//Aseguradoras/MAPFRE.png" alt="Logo 2" class="logo">
+                <img src="./assets/img//Aseguradoras/MERCANTILANDINA.png" alt="Logo 3" class="logo">
+                <img src="./assets/img//Aseguradoras/RIVADAVIA.png" alt="Logo 4" class="logo">
+                <img src="./assets/img//Aseguradoras/RUS.png" alt="Logo 5" class="logo">
+                <img src="./assets/img//Aseguradoras/SANCOR.png" alt="Logo 6" class="logo">
+                <img src="./assets/img//Aseguradoras/SANCRISTOBAL.png" alt="Logo 7" class="logo">
+                <img src="./assets/img//Aseguradoras/ZURICH.png" alt="Logo 8" class="logo">
+                
+                <img src="./assets/img//Aseguradoras/ALLIANZ.png" alt="Logo 1" class="logo">
+                <img src="./assets/img//Aseguradoras/MAPFRE.png" alt="Logo 2" class="logo">
+                <img src="./assets/img//Aseguradoras/MERCANTILANDINA.png" alt="Logo 3" class="logo">
+                <img src="./assets/img//Aseguradoras/RIVADAVIA.png" alt="Logo 4" class="logo">
+                <img src="./assets/img//Aseguradoras/RUS.png" alt="Logo 5" class="logo">
+                <img src="./assets/img//Aseguradoras/SANCOR.png" alt="Logo 6" class="logo">
+                <img src="./assets/img//Aseguradoras/SANCRISTOBAL.png" alt="Logo 7" class="logo">
+                <img src="./assets/img//Aseguradoras/ZURICH.png" alt="Logo 8" class="logo">
+            </div>
+        </div>
+        <div class="redes">
+            <a href="https://wa.me/+5492236331241/" class="icon-whatsapp" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://www.instagram.com/gpc.seguros/" class="icon-instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/grupoperezcabrera" class="icon-facebook" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+        </div>
+    </main>
+    <footer class="pie">
+        <div class="logosf">
+            <img class="logomain2" src="./Assets/ico/gpc.png" alt="logoGPC">
+            <img class="logossn" src="./Assets/ico/logossn.png" alt="Logo SSN">
+        </div>
+        <div class="direction">
+            <p class="direccionmdp">Av. Jara 131, Mar del plata. CP 7600</p>
+        </div>
+        <div class="redesft">
+            <p class="nrft">Nuestras redes</p>
+            <div class="icofoot">
+                <a href="https://wa.me/+5492236331241/" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.facebook.com/grupoperezcabrera" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/gpc.seguros/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+</html>

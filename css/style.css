@@ -129,61 +129,6 @@
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Cambiar sombra */
 }
 
-/* REDES FIXED */
-/* 
-.redes{
-    position: fixed;
-    right: -60px;
-    top: 50%;
-    z-index: 100;
-    display: flex;
-    flex-direction: column;
-}
-
-.redes a {
-    transition: transform 0.4s ease;
-}
-
-.icon-whatsapp{
-    color: #ffff;
-    font-size: 22px;
-    padding: 3px 9px;
-    width: 100px ;
-    border-radius: 6px;
-    background-image: linear-gradient(90deg, rgba(89, 252, 146, 1) 0%, rgba(27, 117, 41, 1) 100%);
-}
-
-.icon-instagram{
-    color: #ffff;
-    font-size: 22px;
-    padding: 3px 9px;
-    width: 100px ;
-    border-radius: 6px;
-    
-    background-image: linear-gradient(90deg, rgba(252, 89, 247, 1) 0%, rgba(110, 17, 214, 1) 100%);
-}
-
-.icon-facebook{
-    color: #ffff;
-    font-size: 22px;
-    padding: 3px 9px;
-    width: 100px ;
-    border-radius: 6px;
-    background-image: linear-gradient(90deg, rgba(89, 103, 252, 1) 0%, rgba(126, 188, 235, 1) 100%);
-}
-
-.icon-whatsapp:hover {
-    transform: translateX(-20px);
-
-}
-
-.icon-facebook:hover {
-    transform: translateX(-20px);
-}
-
-.icon-instagram:hover {
-    transform: translateX(-20px);
-} */
 
 
 /* CONTENIDO MAIN */
@@ -198,15 +143,13 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1em;
+    gap: 100px;
     margin: 5em auto;
 }
 
 .tituloqs{
-    padding: 0 0 2em;
     position: relative;
     display: inline-block;
-    padding-bottom: 5px;
     font-size: 2em;
 }
 
@@ -226,11 +169,12 @@
     justify-content: center;
     text-align: justify;
     flex-wrap: wrap;
-    width: 35vw;
+    width: 400px;
 }
 
 .textqs{
-    width: 200px; 
+    font-size: .9em;
+    width: 300px; 
     height: 30vh;     
     overflow: auto;   
     width: 100%;
@@ -241,7 +185,7 @@
 
 .imagen{
     height: 90%;
-    width: 35vh; 
+    width: 400px; 
     object-fit: cover;
     border-radius: 15px;
 }
@@ -354,6 +298,11 @@
         margin-top: 150px;
         flex-direction: column;
         padding: 30px;
+    }
+
+    .textqs{
+        font-size: 1em;
+        height: 40vh;     
     }
 
     .contenido{
