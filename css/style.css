@@ -247,6 +247,7 @@
     transition: opacity 0.5s ease-in-out, z-index 0s linear 1.5s;
 }
 
+
 .contenido.visible {
     display: inline-block;
     z-index: 20;
@@ -261,8 +262,9 @@
     padding: 5px;
 }
 
+
 .separador{
-    height: 400px;
+    height: 650px;
 }
 
 
@@ -291,6 +293,10 @@
         width: 85vw;
         height: auto;
     }
+
+    .separador{
+        height: 1250px;
+    }
 }
 
 @media (max-width: 700px){
@@ -312,5 +318,9 @@
 
     .servicios{
         height: 50vh;
+    }
+
+    .separador{
+        height: 1200px;
     }
 }
