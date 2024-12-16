@@ -21,3 +21,4 @@ function toggleMenu() {
     const menu = document.querySelector('.menunav');
     menu.classList.toggle('active');
 }
+

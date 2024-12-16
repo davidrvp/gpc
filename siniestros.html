@@ -40,42 +40,44 @@
                 <button id="btnOtros" class="botones" onclick="mostrarContenido('contenidoOtros', 'btnOtros')">Otros</button>
             </div>
             <div id="contenidoAutomotor" class="contenido visible">
-                <!-- <p>Siniestro automotor
-
-                    Requisitos:
+                <form action="https://formsubmit.co/davidpintof.dev@gmail.com" method="POST" class="formulario" enctype="multipart/form-data">
+                    <h3 class="txtsin">Siniestros Automotor</h3><br>
+                    <p class="txtsin">Tuviste un siniestro? Te pedimos que a continuación nos brindes toda la información necesaria para poder realizar la denuncia en tu compañía.</p>
                     
-                    
-                    
-                    Relato de lo ocurrido por mensaje, no por audio. Detallando maniobra, fecha, hora y dirección del siniestro.
-                    
-                    
-                    
-                    - Foto de tu registro de ambos lados.
-                    
-                    - Foto de la cedula de ambos lados.
-                    
-                    - Fotos (5) de tu vehiculo donde se vean los daños y la patente.
-                    
-                    
-                    
-                    
-                    
-                    Datos del tercero:
-                    
-                    
-                    
-                    - Datos del conductor (nombre completo, DNI, teléfono).
-                    
-                    - Datos de su vehículo (marca, modelo y patente).
-                    
-                    - Datos de su compañia de seguros.
-                    
-                    - Fotos (5) de su vehiculo donde se vean los daños y la patente.
-                    
-                    
-                    
-                    Podés enviarnos todo lo solicitado a …………… (mail) o a nuestra línea de WhatsApp, en la próxima hora hábil efectuaremos la denuncia, te enviaremos los comprobantes pertinentes e indicaremos los pasos a seguir.</p> -->
-                    <iframe class="googlefrm" src="https://docs.google.com/forms/d/e/1FAIpQLSeM_Cy0iGv39Yi5zHhBqqQcA2IND86tRpAs0gu94sgzlguZxA/viewform?embedded=true" width="640" height="494" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+                    <label for="relato">Relato de lo ocurrido (lo más detallado posible, mencionando maniobra y zonas de impacto): *</label>
+                    <textarea id="relato" name="relato" rows="5" required></textarea>
+                
+                    <label for="direccion">¿Dónde ocurrió? (Dirección y localidad): *</label>
+                    <input type="text" id="direccion" name="direccion" required>
+                
+                    <label for="fecha">¿Cuándo ocurrió? (Fecha): *</label>
+                    <input type="date" id="fecha" name="fecha" required>
+                
+                    <label for="hora">¿En qué horario ocurrió? (Hora): *</label>
+                    <input type="time" id="hora" name="hora" required>
+                
+                    <label for="contacto">Aporta tus datos de contacto (Nombre completo, Teléfono y Correo): *</label>
+                    <input type="text" id="contacto" name="contacto" placeholder="Nombre completo" required>
+                    <input type="text" id="telefono" name="telefono" placeholder="Teléfono" required>
+                    <input type="email" id="correo" name="correo" placeholder="Correo electrónico" required>
+                
+                    <label for="registroConducir">Adjunta fotos de tu registro de conducir (ambos lados): *</label>
+                    <input type="file" id="registroConducir" name="registroConducir[]" accept="image/*" multiple required>
+                
+                    <label for="dni">Adjunta fotos de tu DNI (ambos lados): *</label>
+                    <input type="file" id="dni" name="dni[]" accept="image/*" multiple required>
+                
+                    <label for="cedulaVehiculo">Adjunta fotos de la cédula (o constancia) de tu vehículo (ambos lados): *</label>
+                    <input type="file" id="cedulaVehiculo" name="cedulaVehiculo[]" accept="image/*" multiple required>
+                
+                    <label for="fotosVehiculo">Adjunta fotos de tu vehículo (al menos 5) de diferentes ángulos, donde se aprecien los daños/faltantes y alguna con la patente visible: *</label>
+                    <input type="file" id="fotosVehiculo" name="fotosVehiculo[]" accept="image/*" multiple required>
+                
+                    <input class="btn" type="submit" value="Enviar">
+                    <input type="hidden" name="next" value="http://127.0.0.1:5501/trabajacn.html">
+                    <input type="hidden" name="_captcha" value="false">
+                </form>
+                
             </div>
             <div id="contenidoHogar" class="contenido">
                 <p>Contenido de Hogar.</p>
